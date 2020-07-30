@@ -14,6 +14,7 @@
 <body>
 
   <section class="card">
+    
     <div class="card__imageContainer">
       <img class="card__image" src="images/drawers.jpg" alt="desk with drawers">
     </div>
@@ -21,32 +22,34 @@
     <div class="card__textContent">
       <h3 class="card__title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h3>
       <p class="card__description">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
-      <div class="card__authorInfo">
-        <img class="card__authorImage" src="images/avatar-michelle.jpg" alt="">
-        <div class="card__authorDetails">
-          <p class="card__authorName">Michelle Appleton</p>
-          <p class="card__date">28 Jun 2020</p>
+    </div>
+
+    <div class="card__authorInfo">
+      <img class="card__authorImage" src="images/avatar-michelle.jpg" alt="">
+      <div class="card__authorDetails">
+        <p class="card__authorName">Michelle Appleton</p>
+        <p class="card__date">28 Jun 2020</p>
+      </div>
+      <a class="card__share">
+        <img class="card__shareIcon" src="images/icon-share.svg" alt="">
+      </a>
+      <div id="share-popup" class="card__shareActive card__shareHidden">
+        <span class="card__text">share</span>
+        <ul class="card__icons">
+          <li><img src="images/icon-facebook.svg" alt="facebook icon"></li>
+          <li><img src="images/icon-twitter.svg" alt="twitter icon"></li>
+          <li><img src="images/icon-pinterest.svg" alt="pinterest icon"></li>
+        </ul>
+        <div class="card__shareContainer">
+          <a class="card__share">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+          </a>
         </div>
-        <a class="card__share">
-          <img class="card__shareIcon" src="images/icon-share.svg" alt="">
-        </a>
       </div>
-
+      <!-- <div class="triangle triangle__hidden"></div> -->
     </div>
 
-    <div id="share-popup" class="card__shareActive card__shareHidden">
-      <span class="card__text">share</span>
-      <ul class="card__icons">
-        <li><img src="images/icon-facebook.svg" alt="facebook icon"></li>
-        <li><img src="images/icon-twitter.svg" alt="twitter icon"></li>
-        <li><img src="images/icon-pinterest.svg" alt="pinterest icon"></li>
-      </ul>
-      <div class="card__shareContainer">
-        <a class="card__share">
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
-        </a>
-      </div>
-    </div>
+
     
   </section>
   
