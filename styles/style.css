@@ -137,7 +137,7 @@ img { max-width: 100%;}
 
     .card { 
         display: grid;
-        grid-template-columns: 35% 65%;
+        grid-template-columns: 35% 35% 20% 10%;
         grid-template-rows: 33.33% 33.33% 33.33%;
         width: 80%; 
     }
@@ -146,7 +146,7 @@ img { max-width: 100%;}
         width: 100%;
         height: auto;
         overflow: hidden;
-        grid-row: 1 / 4;
+        grid-row: 1 / 5;
     }
     
     .card__image { 
@@ -158,6 +158,7 @@ img { max-width: 100%;}
     }
 
     .card__textContent { 
+        grid-column: 2 / 5;
         display: flex;
         flex-direction: column;
     }
@@ -166,24 +167,26 @@ img { max-width: 100%;}
 
     .card__authorInfo { 
         margin-top: auto; 
-        grid-column-start: 2;
+        grid-column: 2 / 5;
     }
 
     .card__shareActive {
+        position: relative;
+        grid-row: 2;
+        grid-column: 3;
+        
         width: 275px;
         height: 60px;
         border-radius: 10px;
         grid-template-columns: 30px 2fr 2fr 30px;
-        top: 55%;
-        left: 65% 
+        
     }
     
     .card__shareActive .card__share { visibility: hidden; }
 
     .triangle {
-        position: absolute;
-        top: calc(55% + 60px);
-        left: calc(65% + 135px);
+        grid-row: 3;
+        grid-column:4;
         width: 0;
         height: 0;
         border-style: solid;
@@ -191,6 +194,6 @@ img { max-width: 100%;}
         border-color: var(--VeryDarkGrayishBlue) transparent transparent transparent;
     }
 
-    .triangle__hidden { visibility: hidden;}
+    .triangle__hidden { visibility: hidden; }
     
 }
